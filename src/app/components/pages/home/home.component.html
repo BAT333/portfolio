@@ -1,0 +1,24 @@
+<section class="intro">
+  <div class="container">
+    <div class="intro-header">
+      <h1 tabindex="0">{{homeData?.title}}</h1>
+      <p tabindex="0">
+       {{homeData?.content}}
+      </p>
+    </div>
+
+    <div class="intro-content">
+      <div class="intro-photo-container">
+        <img 
+          src="{{photosData?.imageUrlStart}}" 
+          alt="Foto profissional de Rafael Alves de Oliveira" 
+          class="intro-photo" 
+        />
+      </div>
+      <div class="intro-actions">
+        <a routerLink="/sobre" class="btn primary-btn">Sobre Mim</a>
+        <a routerLink="/contato" class="btn secondary-btn">Contato</a>
+      </div>
+    </div>
+  </div>
+</section>

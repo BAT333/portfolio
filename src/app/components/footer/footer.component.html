@@ -1,0 +1,31 @@
+<footer class="footer" aria-label="Rodapé do portfólio">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>{{personalData?.name}}</h2>
+        <p>{{personalData?.profession}}</p>
+      </div>
+      <div class="footer-links">
+        <a href="{{personalData?.linkedIn}}" target="_blank" class="footer-link" aria-label="Acessar perfil LinkedIn de Rafael Alves de Oliveira">
+          <i class="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+        <a href="{{personalData?.gitHub}}" target="_blank" class="footer-link" aria-label="Acessar GitHub de Rafael Alves de Oliveira">
+          <i class="fab fa-github"></i>
+          GitHub
+        </a>
+        <a href="{{personalData?.certifications}}" target="_blank" class="footer-link" aria-label="Ver certificações de Rafael Alves de Oliveira na Alura">
+          <i class="fas fa-certificate"></i>
+          Certificações
+        </a>
+      </div>
+      <div class="footer-info">
+        <p><strong>Email:</strong> <a href="mailto:{{personalData?.email}}">{{personalData?.email}}</a></p>
+        <p><strong>Telefone:</strong> <a href="https://web.whatsapp.com/send?phone={{personalData?.telephone}}&text=Ola%2C%20Tudo%2C%20Bem!">{{personalData?.telephone}}</a></p>
+        <p>Localização:{{personalData?.location}}</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{endData?.title}}</p>
+    </div>
+  </footer>
+  

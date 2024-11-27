@@ -1,0 +1,38 @@
+<section class="about-me">
+  <div class="container">
+    <h1 tabindex="0">{{aboutDate?.title}}</h1>
+
+    <div class="about-content">
+      <!-- Foto do perfil -->
+      <div class="about-photo-container">
+        <img 
+          src="{{photosDate?.imageUrlAbout}}" 
+          alt="Foto de Rafael Alves de Oliveira" 
+          class="about-photo" 
+        />
+      </div>
+
+      <!-- Texto sobre mim -->
+      <div class="about-text">
+        <p tabindex="0">
+          {{aboutDate?.content}}
+        </p>
+      </div>
+    </div>
+
+    <!-- Seção de habilidades com alternância -->
+    <div class="skills-section">
+      <h2 tabindex="0">Minhas Habilidades</h2>
+
+      <ul class="skills-list">
+        <li *ngFor="let skill of currentSkills" tabindex="0">{{ skill.description }}</li>
+      </ul>
+
+      <!-- Botões para alternar habilidades -->
+      <div class="navigation-buttons">
+        <button (click)="switchSkills('hard')" class="nav-btn">Hard Skills</button>
+        <button (click)="switchSkills('soft')" class="nav-btn">Soft Skills</button>
+      </div>
+    </div>
+  </div>
+</section>

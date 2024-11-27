@@ -1,0 +1,144 @@
+/* Definir variáveis globais */
+:root {
+    --primary-color: #0056d2; /* Cor principal */
+    --secondary-color: #343a40; /* Cor secundária */
+    --background-color: #ffffff; /* Cor de fundo clara */
+    --text-color: #212529; /* Cor do texto */
+    --highlight-color: #00b894; /* Cor de destaque */
+    --focus-color: #ffd700; /* Cor de foco */
+    --font-family: 'Arial', sans-serif;
+    --line-height: 1.6;
+}
+
+/* Reset básico e configuração de fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: var(--line-height);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #bb86fc;
+    --highlight-color: #03dac5;
+    --focus-color: #03dac5;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Foco nos links e botões */
+a:focus, button:focus {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover, a:focus {
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+
+/* Botões */
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Estilos de foco no botão */
+button:focus {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+/* Personalização do Bootstrap - Navbar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar a {
+    color: #ffffff;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: var(--highlight-color);
+}
+
+/* Cards de projetos */
+.card {
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+.card-link {
+    color: var(--highlight-color);
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes de contraste e leitura */
+header, footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Tornar o site legível */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* Containers */
+.container, .container-fluid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main {
+    padding: 2rem;
+}

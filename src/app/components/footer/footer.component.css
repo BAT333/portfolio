@@ -1,0 +1,97 @@
+/* Estilo geral do footer */
+.footer {
+    background: linear-gradient(135deg, #3a3a3a, #1e1e1e); /* Gradiente bonito */
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Estilo do conteúdo central do footer */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo e título */
+  .footer-logo h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .footer-logo p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-bottom: 20px;
+  }
+  
+  /* Links com animação */
+  .footer-link {
+    display: inline-block;
+    margin: 15px;
+    color: #4CAF50;
+    font-size: 1.1rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+    transform: translateY(-5px); /* Efeito de hover */
+  }
+  
+  /* Ícones */
+  .footer-link i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Estilo da seção de informações */
+  .footer-info p {
+    margin: 10px 0;
+  }
+  
+  .footer-info a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Rodapé inferior (informações de direitos autorais) */
+  .footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .footer-content {
+      padding: 20px;
+    }
+  
+    .footer-logo h2 {
+      font-size: 1.8rem;
+    }
+  
+    .footer-links a {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+  
+    .footer-info p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,140 @@
+/* Estilos para a Página de Contato */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Informações de Contato */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  text-align: center;
+  width: 30%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px);
+}
+
+.contact-item i {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Redes Sociais */
+.social-links {
+  margin-top: 50px;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.social-links i {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+/* Mensagem Final */
+.message p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .social-links ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  .social-links li {
+    display: block;
+    margin: 10px 0;
+  }
+}
